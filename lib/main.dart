@@ -1,4 +1,4 @@
-import 'package:app/pages/nav.dart';
+import 'package:app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Nav());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: WelcomePage());
   }
 }
