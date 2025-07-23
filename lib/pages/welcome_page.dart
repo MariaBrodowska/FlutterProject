@@ -41,14 +41,14 @@ class WelcomePage extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   children: [
                     Container(
-                      width: 55,
-                      height: 55,
+                      width: 52,
+                      height: 52,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Color.fromARGB(255, 223, 241, 255),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color.fromARGB(101, 0, 0, 0),
+                            color: const Color.fromARGB(68, 0, 0, 0),
                             blurRadius: 20,
                             spreadRadius: 0,
                             offset: Offset(-4, 6),
@@ -59,7 +59,14 @@ class WelcomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Nav(),
+                            ),
+                          );
+                        },
                         child: Text(
                           'Get Started',
                           style: TextStyle(

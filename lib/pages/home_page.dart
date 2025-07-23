@@ -12,11 +12,11 @@ class HomePage extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.white),
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.person))],
       ),
-      drawer: Drawer(child: Container(child: Text("cos"))),
+      drawer: Drawer(child: Text("cos")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.end,
-        children: [],
+        children: [Text("Hi ")],
       ),
     );
   }
